@@ -70,7 +70,7 @@ def vicky_func(father: pd.DataFrame, mother: pd.DataFrame, child: pd.DataFrame, 
 
 def all_together(father: str, mother: str, child: str, save_path: str):
 
-    father, mother, child = make_trio_dfs(**trio1)
+    father, mother, child = make_trio_dfs(father=father, mother=mother, child=child)
 
     a_child = adam_func(father, mother, child)
 
