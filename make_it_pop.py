@@ -91,10 +91,6 @@ def all_together(father: str, mother: str, child: str, save_path: str):
 
 if __name__ == "__main__":
 
-    folder = "./data_files/"
-    trio1 = dict(father=['HG003_copynumber_variants.bed',os.path.join(folder,'HG003_short_variants.bed')][1],
-            child=['HG002_copynumber_variants.bed', os.path.join(folder,'HG002_short_variants.bed')][1],
-            mother=['HG004_copynumber_variants.bed', os.path.join(folder,'HG004_short_variants.bed')][1])
     my_parser = argparse.ArgumentParser(description="Convert `*.bed` files to our filtered files")
     my_parser.add_argument("--father", metavar='father',
                            type=str, help="the absolute path to the father's `*.bed` file.")
